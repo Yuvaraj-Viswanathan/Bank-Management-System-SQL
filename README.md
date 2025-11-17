@@ -88,6 +88,7 @@ One Account → Many Transactions
 One Account → Many Fraud Alerts
 
 ⚙️ Setup Instructions
+
 1️⃣ Create the database
 CREATE DATABASE BankDB;
 USE BankDB;
@@ -108,6 +109,7 @@ SOURCE views.sql;
 SOURCE test_data.sql;
 
 🧪 Sample Test Operations
+
 Deposit
 CALL DepositAmount(1, 20000);
 
@@ -148,7 +150,7 @@ Fraud detection logic
 
 Modular SQL project structure
 
-📝 Future Enhancements (Optional)
+📝 Future Enhancements 
 
 Loan module
 
