@@ -3,7 +3,7 @@
 A complete SQL-based Core Banking Simulation built with professional database design practices.
 This project demonstrates real-world backend logic for account management, transactions, stored procedures, triggers, reporting views, and fraud detection.
 
-Suitable for resumes, GitHub portfolios, and interviews (TCS / Cognizant / Capgemini / Accenture / Infosys).
+
 
 📌 Features
 
