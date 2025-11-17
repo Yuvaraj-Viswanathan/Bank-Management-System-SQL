@@ -1,13 +1,12 @@
-🏦 Bank Management System – SQL Core Banking Project
+## Bank Management System – SQL Core Banking Project ##
 
 A complete SQL-based Core Banking Simulation built with professional database design practices.
 This project demonstrates real-world backend logic for account management, transactions, stored procedures, triggers, reporting views, and fraud detection.
 
 
+## Features
 
-📌 Features
-
-🟢 Core Banking
+Core Banking
 
 Create customers
 
@@ -17,7 +16,7 @@ Maintain balances
 
 Automatic transaction logging
 
-💰 Transaction Processing
+Transaction Processing
 
 Deposit stored procedure
 
@@ -27,13 +26,13 @@ Transfer procedure (from → to)
 
 Auto-generated transaction logs
 
-🚨 Fraud Detection
+## Fraud Detection
 
 Trigger for detecting large withdrawals
 
 Logs suspicious events in a separate table
 
-📊 Reporting & Analytics
+## Reporting & Analytics
 
 Daily transactions view
 
@@ -41,7 +40,7 @@ High-value customer view
 
 Interest calculation function
 
-🗂 Project Structure
+## Project Structure
 ```
 BankManagementSystem/
 ├── schema.sql                # Tables and constraints
@@ -52,7 +51,7 @@ BankManagementSystem/
 └── documentation.md          # ERD + explanations
 ```
 
-🏗 Technologies Used
+## Technologies Used
 
 MySQL 8+
 
@@ -68,7 +67,7 @@ Relational Schema Design
 
 ACID Transaction Concepts
 
-🛢 Database Schema (Overview)
+## Database Schema (Overview)
 Tables
 
 Customer → Customer details
@@ -87,28 +86,28 @@ One Account → Many Transactions
 
 One Account → Many Fraud Alerts
 
-⚙️ Setup Instructions
+## Setup Instructions
 
-1️⃣ Create the database
+1️ Create the database
 CREATE DATABASE BankDB;
 USE BankDB;
 
-2️⃣ Run the schema
+2️ Run the schema
 SOURCE schema.sql;
 
-3️⃣ Add stored procedures
+3️ Add stored procedures
 SOURCE stored_procedures.sql;
 
-4️⃣ Add triggers
+4️ Add triggers
 SOURCE triggers.sql;
 
-5️⃣ Add reporting views
+5️ Add reporting views
 SOURCE views.sql;
 
-6️⃣ Insert test data
+6️ Insert test data
 SOURCE test_data.sql;
 
-🧪 Sample Test Operations
+## Sample Test Operations
 
 Deposit
 CALL DepositAmount(1, 20000);
@@ -119,20 +118,20 @@ CALL WithdrawAmount(1, 10000);
 Transfer
 CALL TransferAmount(2, 1, 50000);
 
-🚨 Fraud Detection Example
+## Fraud Detection Example
 
 If a withdrawal exceeds ₹50,000, the trigger automatically inserts an alert:
 
 SELECT * FROM FraudAlerts;
 
-📊 Reporting Views
+## Reporting Views
 1. Daily Transaction Summary
 SELECT * FROM DailyTransactionReport;
 
 2. High Value Customers (> ₹100,000)
 SELECT * FROM HighValueCustomers;
 
-🧠 What You Learn From This Project
+## What You Learn From This Project
 
 Professional SQL database creation
 
@@ -150,7 +149,7 @@ Fraud detection logic
 
 Modular SQL project structure
 
-📝 Future Enhancements 
+## Future Enhancements 
 
 Loan module
 
@@ -164,11 +163,11 @@ ATM simulation module
 
 Audit logs with BEFORE/AFTER triggers
 
-🤝 Contributing
+## Contribution
 
 Pull requests are welcome!
 Feel free to submit enhancements or report issues.
 
-📜 License
+## License
 
 This project is open-source under the MIT License.
